@@ -1,11 +1,10 @@
 import random
 
-MAX_INCREASE=0.175
-MAX_DECREASE=0.05
-MIN_PRICE=0.01
-MAX_PRICE=100.0
-INITIAL_PRICE=10.0
-
+MAX_INCREASE = 0.175
+MAX_DECREASE = 0.05
+MIN_PRICE = 0.01
+MAX_PRICE = 100.0
+INITIAL_PRICE = 10.0
 
 def convert(price):
     converted=("${:,.2f}".format(price))

@@ -1,7 +1,6 @@
 LOWER = 10
 UPPER = 100
 
-
 def get_number():
     while True:
         low = input("Enter a number({}-{}):".format(LOWER, UPPER)).strip()
@@ -13,7 +12,7 @@ def get_number():
                 print("Please enter a valid number")
         else:
             print("Please enter a valid number")
-    int1=int(low)
+    int1 = int(low)
     while True:
         upp = input("Enter a number({}-{}):".format(LOWER, UPPER)).strip()
         if upp.isdecimal():
@@ -24,9 +23,9 @@ def get_number():
                 print("Please enter a valid number")
         else:
             print("Please enter a valid number")
-    int2=int(upp)
+    int2 = int(upp)
     return int1,int2
 
-low,upp=get_number()
+low,upp = get_number()
 for i in range(low,upp):
     print("{} {}".format(i, chr(i)))
