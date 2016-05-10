@@ -4,3 +4,5 @@ color_name = input("Enter the color name : ").capitalize()
 for key, value in color.items():
     if color_name == key:
         print(value)
+if color_name not in color:
+        print("No hexadecimal color code detected.")
