@@ -5,14 +5,15 @@ class Guitar:
         self.cost = cost
 
     def __str__(self):
-        return ("{}, {} : {}".format(self.name, self.year, self.cost))
+        return "{} ({}) : ${:,.2f}".format(self.name, self.year, self.cost)
 
     def get_age(self):
-        age = 2015 - self.year
+        age = 2016 - self.year
         return age
+
 
     def is_vintage(self):
         if self.get_age() >= 50:
             return True
-        else:
+        elif self.get_age() < 50:
             return False
