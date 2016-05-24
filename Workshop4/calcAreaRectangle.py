@@ -1,4 +1,4 @@
-def calculate_area(width,height):
+def calculatearea(width,height):
     area = width * height
     return area
 
